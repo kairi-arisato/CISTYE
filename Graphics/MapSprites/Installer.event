@@ -20,14 +20,20 @@ BYTE 0x13 0x4F 0xA5 0x14 0x8D 0x53 0xF2 0x63 0xC1 0x21 0xE6 0x3A 0xE6 0x3A 0xAA 
 POP
 
 #define SwordCavStanding 0x4
-#define SwordCavFStanding 107
-#define SwordPalFStanding 108
+#define SwordCavFStanding 107 // 0x6b
+#define SwordPalFStanding 108 //6c
+#define LanceCavStanding 109 //6d
+#define LanceCavFStanding 110 //6e
 
 
 //Standing map sprites
 StandingMapSprite(SwordCavStanding,1,SwordCavStand)
 StandingMapSprite(SwordCavFStanding,1,SwordCavFStand)
+StandingMapSprite(LanceCavStanding,1,LanceCavStand)
+StandingMapSprite(LanceCavFStanding,1,LanceCavFStand)
 
 //moving map sprites
 MovingMapSprite(0x5,NormalAP,SwordCavWalk)
 MovingMapSprite(0x39,NormalAP,SwordCavFWalk)
+MovingMapSprite(LanceCav,NormalAP,LanceCavWalk)
+MovingMapSprite(LanceCavF,NormalAP,LanceCavFWalk)

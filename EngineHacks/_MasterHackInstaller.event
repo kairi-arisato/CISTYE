@@ -244,5 +244,7 @@ POP
   #include "MorePatches/FastBattleAnimations/Install.event"
   #include "MorePatches/DisplayDroppableItem/Display Droppable Item.event"
   #include "MorePatches/AutoRefreshingWeapons/AutoRefreshingWeapons.event"
-  //#include "MorePatches/GroupAI/Installer.event"
+  
+  #include "MorePatches/GroupAI/Installer.event"
+
   #include "MorePatches/Debugger/Installer.event"

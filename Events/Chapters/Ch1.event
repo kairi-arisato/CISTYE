@@ -1,12 +1,5 @@
 EventPointerTable(Chapter1Events, PointerList)
 
-setText(0x160, NewChName)
-
-ALIGN 4
-NewChName:
-String("Ch1: Rising Conflict")
-BYTE 0
-
 ALIGN 4
 PointerList:
 POIN TurnBasedEvents
@@ -91,7 +84,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 Units1
+LOAD1 1 Units1
 LOAD1 1 EnemyUnits
 ENDA
 

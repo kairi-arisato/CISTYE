@@ -1,12 +1,4 @@
-EventPointerTable(0xA, PointerList)
-
-setText(0x161, Ch2Name)
-
-ALIGN 4
-Ch2Name:
-String("Ch2: Blood of the Covenant")
-BYTE 0
-
+EventPointerTable(Chapter2Events, PointerList)
 
 ALIGN 4
 PointerList:
@@ -16,7 +8,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN PlayerUnits PlayerUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
@@ -46,16 +38,38 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-PlayerUnits:
+Units1:
 UNIT Daphne DaphneLord 0x0 Level(1,Ally,0) [11,20] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT Ermon WyvernLord 0x0 Level(1,Ally,0) [10,19] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT Hermia PegKn 0x0 Level(1,Ally,0) [12,19] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT Geline MageF 0x0 Level(1,Ally,0) [5,20] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT Marigold Cleric 0x0 Level(1,Ally,0) [4,21] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT Belzen SwordCav 0x0 Level(1,Ally,0) [3,20] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Pr_Bandit SwordCavF 0x0 Level(2,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Azthea LanceCav 0x0 Level(2,Enemy,1) [4,7] 0x0 0x0 0x0 0x0 [IronLance] GroupOneAI
+UNIT Azthea LanceCav 0x0 Level(2,Enemy,1) [9,7] 0x0 0x0 0x0 0x0 [IronLance] GroupOneAI
+UNIT Azthea SwordCavF 0x0 Level(2,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [IronSword] GroupTwoAI
+UNIT Azthea SwordCavF 0x0 Level(2,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [IronSword] GroupTwoAI
+UNIT Azthea Archer 0x0 Level(3,Enemy,1) [4,14] 0x0 0x0 0x0 0x0 [IronBow] DefaultAI
+UNIT Azthea Fighter 0x0 Level(2,Enemy,1) [5,15] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT Azthea Fighter 0x0 Level(2,Enemy,1) [3,15] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT Azthea Archer 0x0 Level(2,Enemy,1) [11,13] 0x0 0x0 0x0 0x0 [IronBow] DefaultAI
+UNIT Azthea Mercenary 0x0 Level(3,Enemy,1) [10,14] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT Azthea Mercenary 0x0 Level(3,Enemy,1) [12,14] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
 UNIT
 
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
 BeginningScene:
-LOAD1 0x1 PlayerUnits
+LOAD1 0 Units1
 LOAD1 1 EnemyUnits
 ENDA
 

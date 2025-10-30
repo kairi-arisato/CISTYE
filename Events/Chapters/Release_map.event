@@ -9,16 +9,16 @@
 //                                                //
 ////////////////////////////////////////////////////
 
-EventPointerTable(0x7, PointerList)
+EventPointerTable(Chapter2Events, PointerList)
 
 #ifdef DRAGON_VEINS
 VeinEffect(0, FreezeAllEnemies)
 #endif // DRAGON_VEINS
 
-setText(0x160, NewChName)
+setText(0x161, Ch2Name)
 
 ALIGN 4
-NewChName:
+Ch2Name:
 String("Boss Rush")
 BYTE 0
 

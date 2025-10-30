@@ -8,20 +8,9 @@
 #define FlagDeathQuote(UnitID, FlagID) "BYTE UnitID 0x0 0xff 0xff; SHORT FlagID; SHORT 0x00; WORD 0"
 //ChapterDeathQuote(UnitID,ChapterID,FlagID/EventID,TextID)
 
-//Boss death quotes
 ALIGN 4
 DeathQuoteTable:
-ChapterDeathQuote(Velka,Chapter1,0x10,VelkaDeathQuote)
-ChapterDeathQuote(RuneVelka,Chapter1,DefeatBossFlag,RuneVelkaDeathQuote1)
-ChapterDeathQuote(RuneVelka,Chapter1,0x1A,JaegerKillsRuneVelka)
-ChapterDeathQuote(WilliamCh1,Chapter1,0x65,WilliamCh1DeathQuote)
-
-//Player death quotes
-AlwaysDeathQuote(Schwarze,0x65,PlaceholderText)
-AlwaysDeathQuote(Noir,0x65,PlaceholderText)
-AlwaysDeathQuote(Cecil,0x0,PlaceholderText)
-AlwaysDeathQuote(Artemisa,0x0,PlaceholderText)
-EndDeathQuote
+EndDeathQuote 
 
 PUSH
 ORG $8472C

@@ -1,0 +1,14 @@
+## RoutGoalWindow
+Rout[X]
+
+## SeizeGoalWindow
+Seize[X]
+
+## DefeatBossGoalWindow
+Defeat boss[X]
+
+## Ch1StatusObjective
+Rout all the bandits![X]
+
+## Ch2StatusObjective
+Defeat Izmon.[X]

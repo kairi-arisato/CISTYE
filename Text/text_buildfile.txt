@@ -130,5 +130,7 @@ a skill when used.[X]
 
 #include "CharClassItemsetc/ClassNamesDescs.txt"
 
+#include "CharClassItemsetc/ObjectiveGoalWindow.txt"
+
 #include "CharClassItemsetc/ItemNamesDescs.txt"
 

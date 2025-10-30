@@ -14,12 +14,13 @@ BattleQuoteFlag(Flag,Unit1,Unit2,ChapterID,TextID)
 TwoWayBattleQuote(Unit1,Unit2,ChapterID,TextID) // This probably uses the battle quote flag (flag 1)
 TwoWayBattleQuoteFlag(Flag,Unit1,Unit2,ChapterID,TextID)
 
-
+*/
 ALIGN 4
 BattleQuoteTable:
 EndQuote
-*/
+
 PUSH
 ORG $846AC
 POIN BattleQuoteTable
 POP
+

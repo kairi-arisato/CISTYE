@@ -37,3 +37,10 @@ Gurmberg[X]
 A no-name leader of a no-name[n]
 bandit group, but something[n]
 feels off about this one...[X]
+
+## AztheaName
+Azthea[X]
+
+## AztheaDesc
+A soldier of the empire of Azthea, a[n]
+long-time ally and rival of Pythia.[X]

@@ -2,3 +2,5 @@ ALIGN 16
 #include "TableInstaller.event"
 
 #include "ExternalTables.event"
+
+#include "Manual/ManualTableInstaller.event"

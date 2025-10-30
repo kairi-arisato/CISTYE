@@ -7,3 +7,4 @@
 
 #define Gurmberg 0x68
 #define Pr_Bandit 0x8E
+#define Azthea 0x80

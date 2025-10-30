@@ -13,3 +13,19 @@ SwordCavStand:
 ALIGN 4
 SwordCavWalk:
 #incbin "dmp/Cavalier (M) Sword {SALVAGED}-walk.dmp"
+
+ALIGN 4
+LanceCavFStand:
+#incbin "dmp/Cavalier (F) Alt Hair Lance {SALVAGED, flasuban}-stand.dmp"
+
+ALIGN 4
+LanceCavFWalk:
+#incbin "dmp/Cavalier (F) Alt Hair Lance {SALVAGED, flasuban}-walk.dmp"
+
+ALIGN 4
+LanceCavStand:
+#incbin "dmp/Cavalier (M) Lance {SALVAGED}-stand.dmp"
+
+ALIGN 4
+LanceCavWalk:
+#incbin "dmp/Cavalier (M) Lance {SALVAGED}-walk.dmp"

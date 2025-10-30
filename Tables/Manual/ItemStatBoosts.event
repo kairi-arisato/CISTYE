@@ -5,7 +5,7 @@
 
 //#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB MovB ConB"
 
-ALIGN 4
+/* ALIGN 4
 GawainStatBoosts:
 StatBonus(0,0,0,0,0,2,0,0,0,0)
 
@@ -19,4 +19,4 @@ StatBonus(0,5,5,5,5,9,8,5,0,0)
 
 ALIGN 4
 KnellTypeIIStatBoosts:
-StatBonus(0,5,7,5,5,5,7,5,0,0)
+StatBonus(0,5,7,5,5,5,7,5,0,0) */
