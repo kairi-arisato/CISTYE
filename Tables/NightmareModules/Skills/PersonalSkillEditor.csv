@@ -1,11 +1,11 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharismaID
-Seth,SaviorID
-Gilliam,RallyDefID
-Franz,SealStrID
-Moulder,RallyResID
-Vanessa,SpurSpdID
+Daphne,LilysPoiseID
+Ermon,MercyID
+Geline,MaleficAuraID
+Belzen,ChargeID
+Hermia,OutriderID
+Marigold,PowerstaffID
 Ross,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
@@ -26,7 +26,7 @@ Saleh,SpurMagID
 Ewan,CelerityID
 L'Arachel,IntimidateID
 Dozla,PivotID
-0,0x0
++AC0-0,0x0
 Rennac,SpurSpdID
 Duessel,RepositionID
 Myrrh,DragonsBloodID
@@ -44,30 +44,30 @@ Caellach,0x0
 Fado,0x0
 Ismaire,0x0
 Hayden,0x0
+FakeEirika,0x0
++AC0-0,0x0
 0,0x0
 0,0x0
 0,0x0
 0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
++AC0-0,0x0
 Lyon's Summon,0x0
-0,0x0
-0,0x0
++AC0-0,0x0
++AC0-0,0x0
 Knoll's Summon,0x0
 Ewan's Summon,0x0
 Lyon (Ch 17),0x0
 Morva (Ch 20),FrenzyID
 Orson (Ch 5x),0x0
 Valter (Ch 15),0x0
-Selena (Ch 10B & 13B),0x0
+Selena (Ch 10B +ACY- 13B),0x0
 Valter (Prologue),0x0
 Breguet (Ch 1),CounterMagicID
 Bone (Ch 2),AxefaireID
@@ -86,7 +86,7 @@ Caellach (Ch 15),0x0
 Pablo (Ch 13A),0x0
 0,0x0
 Gorgon (Ch 18),0x0
-Riev (Ch 19 & 20),0x0
+Riev (Ch 19 +ACY- 20),0x0
 0,0x0
 0,0x0
 Gheb (Ch 9B),VantageID
@@ -98,12 +98,12 @@ Entombed (Monster Boss),0x0
 0,0x0
 0,0x0
 0,0x0
-0,0x0
++AC0-0,0x0
 Hunter (Ch 16),0x0
-0,0x0
++AC0-0,0x0
 Brigand,0x0
 0,0x0
-O'Neill (Prologue),QuickRiposteID
+Gurmberg,QuickRiposteID
 Glen (Cutscene),0x0
 Zonta (Ch 5x),0x0
 Vigarde (Ch 14B),RenewalID
@@ -127,7 +127,7 @@ Orson (Ch 16),0x0
 0,0x0
 0,0x0
 Grado Soldier (Special),0x0
-Grado Soldier 1 (Normal),0x0
+Azthean Soldier (main),0x0
 Grado Soldier 2,0x0
 Grado Soldier 3,0x0
 Grado Soldier 4,0x0
@@ -141,7 +141,7 @@ Grado Soldier 11 (Duessel's),0x0
 Grado Soldier 12 (Duessel's),0x0
 Grado Soldier 13,0x0
 Grado Remnant 1 (Main),0x0
-Cutthroat,0x0
+Bandit,0x0
 Grado Remnant 2 (Cutscene and C16 only?),0x0
 Grado Remnant 3 (C16 only?),0x0
 Grado Remnant 4 (C16 only?),0x0

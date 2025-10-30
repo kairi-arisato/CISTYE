@@ -1,0 +1,13 @@
+## SwordCavName ^
+Sword Cavalier[X]
+
+## SwordCavDesc
+Mounted knights with[n]
+superior movement. [sword][horse][X]
+
+## LanceCavName ^
+Lance Cavalier[X]
+
+## LanceCavDesc
+Mounted knights with[n]
+superior movement. [lance][horse][X]

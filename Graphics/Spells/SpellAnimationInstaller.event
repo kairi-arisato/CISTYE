@@ -1,0 +1,10 @@
+#include "SpellAnimationDefs.txt"
+
+#include "CSA/Master Spell Animation Installer.event"
+
+//installers
+#include "event/Gawain_anims/magic_48.event"
+
+/*
+credits:
+Gawain - Uh, Mycahel?

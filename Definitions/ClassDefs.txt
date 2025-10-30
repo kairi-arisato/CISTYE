@@ -1,0 +1,11 @@
+#define DaphneLord 0x2
+#define SwordCav 0x5
+#define LanceCav 0x6
+#define SwordCavF 0x39
+#define LanceCavF 0x3A
+#define PegKn 0x48
+#define MageF 0x26
+#define LncArmor 0x9
+#define AxeArmor 0xA
+#define Myrm 0x13
+#define MyrmF 0x14

@@ -1,0 +1,2 @@
+//Spells
+#define Gawain_index 0x48

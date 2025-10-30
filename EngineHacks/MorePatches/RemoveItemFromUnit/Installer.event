@@ -1,0 +1,18 @@
+//THANKS SO MUCH FOR ZANE AVERNATHY FOR DOING THIS FOR ME!!!!!!
+
+// This is the code bit. I suggest that you give things better names
+// than FEBuilder does. 
+ALIGN 4; gASMC_RemoveItemFromUnit: {
+  #incbin "item_collect_by_unit.dmp" // seriously please rename this
+};
+
+// We're not using the standard `ASMC` raw because 7743 likes to pack function parameters
+// into the event code body.
+// The `| 1` ensures that the THUMB bit is set in the address.
+#define RemoveItemFromUnit(unit, item) "SHORT 0x0D40; BYTE (unit & 0xFF) (item & 0xFF); POIN (gASMC_RemoveItemFromUnit | 1);"
+
+ALIGN 4; gASMC_RemoveItem: {
+  #incbin "item_collect.bin"
+};
+
+#define RemoveItem(item) "SHORT 0x0D40; BYTE (item & 0xFF) (0x00); POIN (gASMC_RemoveItem | 1);"

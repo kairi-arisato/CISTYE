@@ -1,0 +1,39 @@
+## DaphneName
+Daphne[X]
+
+## DaphneDesc
+The Sovess of Pythia.[n]
+Talented, yet reckless.[X]
+
+## ErmonName
+Ermon[X]
+
+## ErmonDesc
+A member of the Infernal Knights of[n]
+Pythia, also known as the "Bloodbath".[X]
+
+## GelineName
+Geline[X]
+
+## GelineDesc
+A noble due to her affiliation with the[n]
+Fiery Mages Court. Shy and strict.[X]
+
+## BelzenName
+Belzen[X]
+
+## BelzenDesc
+A young knight of Pythia assigned[n]
+to search for the Sovereign.[X]
+
+## BanditDesc
+People who have chosen a life[n]
+of pillaging and killing.[X]
+
+## GurmbergName
+Gurmberg[X]
+
+## GurmbergDesc
+A no-name leader of a no-name[n]
+bandit group, but something[n]
+feels off about this one...[X]

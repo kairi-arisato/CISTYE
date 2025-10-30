@@ -13,12 +13,11 @@ after combat.[N]
 (3 Durability Per Hit)[X]
 
 ## UM_Mercy
- Mercy[X]
+ Restrain[X]
 
 ## UM_MercyDesc
 Leave opponent with[N]
-at least 1 HP.[N]
-(3 Durability Per Hit)[X]
+at least 1 HP.[X]
 
 ## UM_Gamble
  Gamble[X]

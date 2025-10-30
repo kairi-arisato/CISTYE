@@ -1,0 +1,118 @@
+EventPointerTable(Chapter1Events, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch1: Rising Conflict")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0x9,ReinforcementsEvent,6)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x7,NorthVillage,15,3)
+Village(0x8,SouthVillage,15,15)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Daphne DaphneLord 0x0 Level(1,Ally,0) [15,17] 0x0 0x0 0x0 0x0 [Harmony,IronBow] NoAI
+UNIT Ermon WyvernLord 0x0 Level(5,Ally,0) [14,17] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT Belzen SwordCav 0x0 Level(3,Ally,0) [16,17] 0x0 0x0 0x0 0x0 [IronSword] NoAI
+UNIT Marigold Cleric 0x0 Level(1,Ally,0) [15,4] 0x0 0x0 0x0 0x0 [Heal,HolyHeart] NoAI
+UNIT Hermia PegKn 0x0 Level(3,Ally,0) [14,5] 0x0 0x0 0x0 0x0 [IronLance,SlimLancePlus2,Javelin] NoAI
+UNIT Geline MageF 0x0 Level(3,Ally,0) [16,5] 0x0 0x0 0x0 0x0 [Fire,Thunder] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Pr_Bandit Brigand 0x0 Level(3,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [HandAxe] DefaultAI
+UNIT Pr_Bandit Archer 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Longbow] NeverMoveAI
+UNIT Pr_Bandit AxeArmor 0x0 Level(2,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Pr_Bandit AxeArmor 0x0 Level(2,Enemy,1) [10,5] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Pr_Bandit LanceCav 0x0 Level(1,Enemy,1) [2,6] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Pr_Bandit Archer 0x0 Level(3,Enemy,1) [3,5] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Pr_Bandit SwordCav 0x0 Level(1,Enemy,1) [2,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Pr_Bandit Brigand 0x0 Level(3,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT Pr_Bandit Myrm 0x0 Level(3,Enemy,1) [6,11] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT Pr_Bandit SwordCav 0x0 Level(1,Enemy,1) [3,14] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Pr_Bandit Myrm 0x0 Level(3,Enemy,1) [4,15] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Pr_Bandit LanceCav 0x0 Level(1,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Gurmberg Fighter 0x0 Level(4,Enemy,1) [2,16] DropItem 0x0 0x0 0x0 [SteelAxe,HandAxe] GuardTileAI
+UNIT 
+
+ReinforcementsCh1:
+UNIT Pr_Bandit Brigand 0x0 Level(3,Enemy,1) [0,11] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT Pr_Bandit Brigand 0x0 Level(3,Enemy,1) [0,12] 0x0 0x0 0x1 REDA1R12 [IronAxe] DefaultAI
+UNIT Pr_Bandit PegKn 0x0 Level(2,Enemy,1) [5,0] 0x0 0x0 0x1 REDA4R2 [IronLance] DefaultAI
+UNIT Pr_Bandit PegKn 0x0 Level(2,Enemy,1) [4,0] 0x0 0x0 0x1 REDA5R1 [Javelin] DefaultAI
+UNIT Pr_Bandit Brigand 0x0 Level(3,Enemy,1) [5,17] 0x0 0x0 0x1 REDA5R16 [IronAxe] DefaultAI
+UNIT Pr_Bandit Archer 0x0 Level(1,Enemy,1) [4,17] 0x0 0x0 0x0 0x0 [IronBow] DefaultAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units1
+LOAD1 1 EnemyUnits
+ENDA
+
+EndingScene:
+EVBIT_F 0x2
+MNC2 Chapter2
+//MNTS 0x1 //return to title screen
+ENDA
+
+ReinforcementsEvent:
+LOAD1 1 ReinforcementsCh1
+NoFade;ENDA
+
+NorthVillage:
+SetBackground(0x2)
+GiveItem(-1,RedGem)
+EndConvo
+NoFade;ENDA
+
+SouthVillage:
+SetBackground(0x2)
+GiveItem(-1,Elixir)
+EndConvo
+NoFade;ENDA

@@ -233,3 +233,16 @@ POP
   // Save/Suspend Expansion
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
 
+////////////////////////////////MORE PATCHES EXTERNALLY INSTALLED
+
+  #include "MorePatches/Autosave/Installer.event"
+  #include "MorePatches/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+  #include "MorePatches/ModularMinimugBox-master/Installers/MMBInstallerVesly.event"
+  #include "MorePatches/ExtendWeaponDescBox/Installer.event"
+  #include "MorePatches/RemoveItemFromUnit/Installer.event"
+  //#include "MorePatches/ModularSupply/ModularSupply.event"
+  #include "MorePatches/FastBattleAnimations/Install.event"
+  #include "MorePatches/DisplayDroppableItem/Display Droppable Item.event"
+  #include "MorePatches/AutoRefreshingWeapons/AutoRefreshingWeapons.event"
+  //#include "MorePatches/GroupAI/Installer.event"
+  #include "MorePatches/Debugger/Installer.event"

@@ -1,0 +1,30 @@
+#define AlwaysDeathQuote(arg000,arg001,arg002) "BYTE arg000 0x0 0xff 0xff arg001 0x0 ;SHORT arg002 ;WORD 0x0 "
+#define ChapterDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001 arg002 0x0 ;SHORT arg003 ;WORD 0x0 "
+#define EndDeathQuote "BYTE 0xff 0xff 0x0 0x0 0x0 0x0 ;SHORT 0x0 ;WORD 0x0 "
+#define DefeatBossFlag 0x2
+#define GameOverFlag 0x65
+#define CheckNoPlayersDeathQuote(UnitID) "BYTE UnitID 0x0 0xff 0xff 0x00 0x00; SHORT 0x00; WORD 0" //POIN CheckIfNoPlayerUnits" 
+#define EventDeathQuote(UnitID, EventLabelName) "BYTE UnitID 0x0 0xff 0xff 0x00 0x00; SHORT 0x00; POIN EventLabelName" //POIN CheckIfNoPlayerUnits" 
+#define FlagDeathQuote(UnitID, FlagID) "BYTE UnitID 0x0 0xff 0xff; SHORT FlagID; SHORT 0x00; WORD 0"
+//ChapterDeathQuote(UnitID,ChapterID,FlagID/EventID,TextID)
+
+//Boss death quotes
+ALIGN 4
+DeathQuoteTable:
+ChapterDeathQuote(Velka,Chapter1,0x10,VelkaDeathQuote)
+ChapterDeathQuote(RuneVelka,Chapter1,DefeatBossFlag,RuneVelkaDeathQuote1)
+ChapterDeathQuote(RuneVelka,Chapter1,0x1A,JaegerKillsRuneVelka)
+ChapterDeathQuote(WilliamCh1,Chapter1,0x65,WilliamCh1DeathQuote)
+
+//Player death quotes
+AlwaysDeathQuote(Schwarze,0x65,PlaceholderText)
+AlwaysDeathQuote(Noir,0x65,PlaceholderText)
+AlwaysDeathQuote(Cecil,0x0,PlaceholderText)
+AlwaysDeathQuote(Artemisa,0x0,PlaceholderText)
+EndDeathQuote
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+POP
+

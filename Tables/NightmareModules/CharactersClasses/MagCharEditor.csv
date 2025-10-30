@@ -1,11 +1,11 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
-Eirika,0,25
-Seth,2,10
-Gilliam,0,5
-Franz,1,10
-Moulder,3,40
-Vanessa,2,25
+Daphne,3,30
+Ermon,2,10
+Geline,4,50
+Belzen,1,25
+Hermia,0,30
+Marigold,6,60
 Ross,0,5
 Neimi,2,15
 Colm,1,10
@@ -103,7 +103,7 @@ Hunter (Ch 16),3,10
 +AC0-0,0,0
 Brigand,0,0
 0,0,0
-O'Neill (Prologue),0,5
+Gurmberg,0,5
 Glen (Cutscene),0,0
 Zonta (Ch 5x),1,5
 Vigarde (Ch 14B),5,15
@@ -127,7 +127,7 @@ Orson (Ch 16),3,5
 0,0,0
 0,0,0
 Grado Soldier (Special),0,0
-Grado Soldier 1 (Normal),0,0
+Azthean Soldier (main),0,0
 Grado Soldier 2,0,0
 Grado Soldier 3,0,0
 Grado Soldier 4,0,0
@@ -141,7 +141,7 @@ Grado Soldier 11 (Duessel's),0,0
 Grado Soldier 12 (Duessel's),0,0
 Grado Soldier 13,0,0
 Grado Remnant 1 (Main),0,0
-Cutthroat,0,0
+Bandit,0,0
 Grado Remnant 2 (Cutscene and C16 only?),0,0
 Grado Remnant 3 (C16 only?),0,0
 Grado Remnant 4 (C16 only?),0,0

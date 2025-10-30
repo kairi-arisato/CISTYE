@@ -1,0 +1,20 @@
+## HolyHeartName
+Holy Heart[X]
+
+## HolyHeartDesc
+A Mend staff, repurposed as[n]
+offensive magic. Galeforce.[X]
+
+## LectureName
+Lecture[X]
+
+## LectureDesc
+Weaponized lectures, capable of putting[n]
+the enemy to sleep for five turns on hit.[X]
+
+## SlimLancePlus2Name ^
+Slim Lance++[X]
+
+## SlimLancePlus2Desc
+An improved version of the Slim[n]
+Lance, created by Hermia herself.[X]

@@ -1,0 +1,4 @@
+#define Harmony 0x9
+#define HolyHeart 0x3d
+#define Lecture 0xa
+#define SlimLancePlus2 0x44

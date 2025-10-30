@@ -1,0 +1,6 @@
+# 0x35C
+Harmony[X]
+
+# 0x40C
+Deals magic damage.[n]
++5 AS when attacking.[X]

@@ -1,4 +1,4 @@
-@Lily's Poise: +1/-3dmg for adjacent allies
+@Lily's Poise: +3 dmg given/taken for adjacent allies
 .equ LilysPoiseID, AuraSkillCheck+4
 .thumb
 push {r4-r7,lr}
@@ -19,17 +19,28 @@ mov r3, #1 @range
 cmp r0, #0
 beq Done
 
+@add 3 damage each
+mov r1, #0x5a
+ldrsh r0, [r4, r1] @atk
+add r0, #3
+strh r0, [r4,r1]
+mov r1, #0x5c
+ldrsh r0, [r4, r1] @atk
+sub r0, #3
+strh r0, [r4,r1]
+
+/*
 mov r0, r4
 add     r0,#0x5A    @Move to the attacker's dmg.
 ldrh    r3,[r0]     @Load the attacker's dmg into r3.
-add     r3,#1    @add 1 to the attacker's dmg.
+add     r3,#3    @add 3 to the attacker's dmg.
 strh    r3,[r0]     @Store.
 
 @ mov r0, r5
 @ add     r0,#0x5A    @Move to the defender's dmg.
-@ ldrh    r3,[r0]     @Load the defender's dmg into r3.
-@ sub     r3,#3    @sub 3 from the defender's dmg.
-@ strh    r3,[r0]     @Store.
+@ ldrh    r3,[r1]     @Load the defender's dmg into r3.
+@ sub     r3,#3    @subtract 3 to the defender's dmg.
+@ strh    r3,[r1]     @Store.
 
 @testing
 mov r0, r4
@@ -37,6 +48,7 @@ add r0, #0x5c @attacker defense
 ldrh r3, [r0]
 add r3, #3
 strh r3, [r0]
+*/
 
 Done:
 pop {r4-r7}

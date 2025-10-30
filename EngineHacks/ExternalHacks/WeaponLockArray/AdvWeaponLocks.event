@@ -40,4 +40,12 @@ BYTE EirikaLord
 BYTE Rogue
 BYTE EndLockArray
 
+HermiaPRFArray:
+BYTE Hermia
+BYTE EndLockArray
+
+ErmonPRFArray:
+BYTE Ermon
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

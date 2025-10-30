@@ -27,7 +27,7 @@
 // If uncommented, a full str/split will be implemented without replacing any stats
 // TODO: Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
 // Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
-// #define USE_STRMAG_SPLIT
+#define USE_STRMAG_SPLIT
 
 // If uncommented, the statscreen will have a moving background similar to FE6 and FE7.
 // Customization of graphical assets is possible in Necessary/ModularStatScreen/Background/Graphics/Graphics.event.
@@ -37,7 +37,7 @@
 #define BATTLE_STATS
 
 //If uncommented, will enable Casual Mode (set by flag 0xB0).
-#define CASUAL_MODE
+//#define CASUAL_MODE
 
 //If uncommented, will enable Contemporary Talk & Support.
 #define CONTEMPORARY_TALK_SUPPORT
@@ -53,7 +53,7 @@
 #define TRAP_REWORK
 
 //If uncommented, will enable Dragon Veins.
-#define DRAGON_VEINS
+//#define DRAGON_VEINS
 
 //If uncommented, will enable Heal Tiles.
 #define HEAL_TILES
@@ -152,14 +152,14 @@
 
 //If uncommented, AdvWeaponLocks will be implemented.
 //This is a rewrite of venno's array-based weapon locks.
-// #define ADV_WEAPON_LOCKS
+#define ADV_WEAPON_LOCKS
 //If uncommented, AdvWeaponLocks will use only the lowest bit of the weapon ability word's 4th byte rather than the entire thing.
 //Requires additional configuration in WeaponLockArray/AdvWeaponLocks.event.
 // #define CONSOLIDATED_ADV_WEAPON_LOCKS
 
 //If uncommented, Status-Inflicting Weapons will be implemented.
 //Setting weapon effect 0xD will apply the effect ID at item data +0x22.
-// #define STATUS_WEAPONS
+#define STATUS_WEAPONS
 
 //If uncommented, Narrow Font will be implemented.
 //This allows for setting narrower text in addition to standard text.
@@ -203,7 +203,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 //#define INSTALL_AoE
 
 // If uncommented, Unlock staves will work on chests.
-// #define UNLOCK_WORKS_ON_CHESTS
+#define UNLOCK_WORKS_ON_CHESTS
 
 // If uncommented, damage numbers will display over participants' heads during battle animations.
 // #define BATTLE_ANIMATION_NUMBERS
@@ -371,7 +371,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 
 //If true, Fixed Growths mode will exist.
 // Note: this takes promotion level into account, but does not take stat boosters into account 
-#define FIXED_GROWTHS_MODE False
+#define FIXED_GROWTHS_MODE True
 
 //ID of flag to use for fixed growths mode, if enabled (also works if flag here is defined as 0)
 #define FIXED_GROWTHS_FLAG_ID 0xEF
@@ -400,7 +400,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define STACKABLE_GROWTH_BOOSTS True
 
 //Amount for Metis Tome to boost growths by
-#define METIS_TOME_BOOST 5
+#define METIS_TOME_BOOST 15
 
 //If true, growths will be calculated as (char growth + class growth).
 #define USE_CHAR_AND_CLASS_GROWTHS False

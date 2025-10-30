@@ -66,7 +66,7 @@ mov r2,r0 @for consistency in finishing
 
 FinishCharge:
 */
-lsr r2,#0x1
+//lsr r2,#0x1
 mov r1, #0x5A
 ldrh r0, [r4, r1]
 add r0, r2

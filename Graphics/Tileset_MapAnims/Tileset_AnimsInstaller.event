@@ -1,0 +1,19 @@
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
+/*
+//tilesets
+ALIGN 4
+Fields4Palette:
+#incbin "MapPalette/Fields4_pal.dmp"
+
+//event pointer table
+EventPointerTable(Fields4PaletteID, Fields4Palette)
+*/
+
+ALIGN 4
+Fields1Palette:
+#incbin "MapPalette/Fields1_pal.dmp"
+
+EventPointerTable(Fields1PaletteID, Fields1Palette)

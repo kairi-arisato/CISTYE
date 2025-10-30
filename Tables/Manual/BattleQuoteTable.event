@@ -1,0 +1,25 @@
+//copied straight from Pokemblem. Credits to Vesly.
+
+#define BattleQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 arg001 0x0 arg002 0x0 0x1 0x0 ;SHORT arg003 ;BYTE 0x0 0x0 0x0 0x0 0x0 0x0 "
+#define BattleQuoteFlag(flag,arg000,arg001,arg002,arg003) "BYTE arg000 0x0 arg001 0x0 arg002 0x0 flag 0x0 ;SHORT arg003 ;BYTE 0x0 0x0 0x0 0x0 0x0 0x0 "
+#define TwoWayBattleQuote(arg000,arg001,arg002,arg003) "BattleQuote(arg000,arg001,arg002,arg003);BattleQuote(arg001,arg000,arg002,arg003)"
+#define TwoWayBattleQuoteFlag(flag,arg000,arg001,arg002,arg003) "BattleQuoteFlag(flag,arg000,arg001,arg002,arg003);BattleQuoteFlag(flag,arg001,arg000,arg002,arg003)"
+#define EndQuote "BYTE 0xff 0xff"
+
+
+/*
+Format:
+BattleQuote(Unit1,Unit2,ChapterID,TextID) //uses flag 1, battle quotes tag
+BattleQuoteFlag(Flag,Unit1,Unit2,ChapterID,TextID)
+TwoWayBattleQuote(Unit1,Unit2,ChapterID,TextID) // This probably uses the battle quote flag (flag 1)
+TwoWayBattleQuoteFlag(Flag,Unit1,Unit2,ChapterID,TextID)
+
+
+ALIGN 4
+BattleQuoteTable:
+EndQuote
+*/
+PUSH
+ORG $846AC
+POIN BattleQuoteTable
+POP

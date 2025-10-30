@@ -19,6 +19,9 @@
 [OpenQuote] = [0xC2][0x93]
 [CloseQuote] = [0xC2][0x94]
 
+[ClearFace] = [CR]
+[CF] = [ClearFace]
+
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]
 [MidLeft] = [OpenMidLeft]
@@ -104,6 +107,9 @@
 [space] = [0xDE][0xB0]
 [sp] = [0xDE][0xB0]
 
+[Box1] = [0x80][0x2B][0x01]
+[Box2] = [0x80][0x2B][0x02]
+[Box3] = [0x80][0x2B][0x03]
 
 
 

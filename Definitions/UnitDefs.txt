@@ -1,0 +1,9 @@
+#define Daphne 0x1
+#define Ermon 0x2
+#define Geline 0x3
+#define Belzen 0x4
+#define Hermia 0x5
+#define Marigold 0x6
+
+#define Gurmberg 0x68
+#define Pr_Bandit 0x8E

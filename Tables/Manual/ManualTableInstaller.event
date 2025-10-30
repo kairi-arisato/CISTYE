@@ -1,0 +1,3 @@
+#include "ItemStatBoosts.event"
+#include "BattleQuoteTable.event"
+#include "DeathQuoteTable.event"

@@ -644,7 +644,7 @@
 
 //Life and Death: +10 to damage dealt and taken.
 //Author Unknown (Initial Commit)
-#define LifeAndDeathID 255
+#define LifeAndDeathID 254
 
 //Light Weight: When holding three or less items, attack speed +3.
 //Author Unknown (Initial Commit)
@@ -715,7 +715,7 @@
 #define SteadyStanceID 251
 #define SturdyStanceID 252
 #define SwiftStanceID 253
-#define WardingStanceID 254
+#define WardingStanceID 255
 #define SpectrumStanceID 255
 //By Sme
 #define AlertStanceID 245
