@@ -1,0 +1,13 @@
+TO DO LIST:
+
+- COMPLETE THE CHAPTERS!!!!
+- Create these skills:
+	- Geline's skill: United Flame
+		- Gain +2 damage for EACH ALLY within 2 tiles.
+	- Powerstaff (Modified): Refresh both ally and self after using staff.
+		- Also fix Powerstaff to apply to Marigold's PRF.
+	- Lecture (Ermon's Weapon)
+		- Figure out how to apply status to weapons
+- Add proper item icons and animations
+- Draw the portraits yourself.
+- The plot

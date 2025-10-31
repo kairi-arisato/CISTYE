@@ -271,7 +271,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define DRAGON_VEIN_SKILL_REQUIRED
 
 //If commented, Heroes Movement skills will use class checks and will not require their respective skills. Configure lists for each skill in 'SkillSystem/Skills/UnitMenuSkills/HeroesMovement/HeroesMovement.event', at the bottom of the file.
-#define HEROES_MOVEMENT_SKILL_REQUIRED
+//#define HEROES_MOVEMENT_SKILL_REQUIRED
 
 // If uncommented, the Charge mechanic will be disabled and Moonbow will use a skill% activation rate. This will not change Moonbow's description.
 // #define DISABLE_CHARGE

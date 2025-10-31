@@ -109,6 +109,7 @@
 
 //palette
 #define Fields1PaletteID 0x89
+#define SnowFieldsPaletteID 0x8A
 
 //map animation
 #define Fields1AnimationID 0xCB

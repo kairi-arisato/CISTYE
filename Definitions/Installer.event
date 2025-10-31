@@ -1,10 +1,9 @@
 #define ItemTable NewItemTable
 #define ClassTable NewClassTable
 #define ItemStatus(StatusID,Duration) "StatusID | (Duration << 4)"
-#define GiveItem(unit, item) "SVAL s3 item; GIVEITEM unit"
-#define EndConvo "CALL $9EE2C4"
 
 #include "UnitDefs.txt"
 #include "ItemDefs.txt"
 #include "ChapterDefs.txt"
 #include "ClassDefs.txt"
+#include "Macros.txt"

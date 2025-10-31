@@ -2,7 +2,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
 Daphne,3,30
 Ermon,2,10
-Geline,4,50
+Geline,6,50
 Belzen,1,25
 Hermia,0,30
 Marigold,6,60
@@ -127,7 +127,7 @@ Orson (Ch 16),3,5
 0,0,0
 0,0,0
 Grado Soldier (Special),0,0
-Azthean Soldier (main),0,0
+Azthean Soldier (main),1,0
 Grado Soldier 2,0,0
 Grado Soldier 3,0,0
 Grado Soldier 4,0,0

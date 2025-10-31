@@ -25,7 +25,7 @@ beq		End
 
 @check if already powerstaffed; if so can't trigger again
 ldr	r0, [r4,#0x0C]	@status bitfield
-mov	r1, #0x04
+mov	r1, #0x04 
 lsl	r1, #0x08
 and	r0, r1
 cmp	r0, #0x00
@@ -33,7 +33,7 @@ bne	End
 
 
 @check if last action was using a staff
-ldr r0,=#0x203A958
+ldr r0,=#0x203A958 //Use this for replicating Guidance from CC
 ldrb r0,[r0,#0x11]
 mov r1,#0x3
 cmp r0,r1

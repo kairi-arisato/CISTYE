@@ -10,6 +10,8 @@
 
 ALIGN 4
 DeathQuoteTable:
+ChapterDeathQuote(Gurmberg,Chapter1,DefeatBossFlag,0x0)
+ChapterDeathQuote(Izmon,Chapter2,DefeatBossFlag,0x0)
 EndDeathQuote 
 
 PUSH

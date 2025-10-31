@@ -397,8 +397,8 @@ Anathema: -10 Avoid/Dodge to all[N]
 enemies within 3 tiles.[X]
 
 ## SD_LilysPoise
-Pythia's Flower: Adjacent allies[N]
-get +3 to damage dealt/taken.[X]
+Pythia's Flower: Allies within[n]
+two spaces deal/take +3 damage.[X]
 
 ## SD_Expertise
 Expertise: Receive double damage[N]

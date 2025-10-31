@@ -16,4 +16,9 @@ ALIGN 4
 Fields1Palette:
 #incbin "MapPalette/Fields1_pal.dmp"
 
+ALIGN 4
+SnowFieldsPalette:
+#incbin "MapPalette/SnowFields_pal.dmp"
+
 EventPointerTable(Fields1PaletteID, Fields1Palette)
+EventPointerTable(SnowFieldsPaletteID, SnowFieldsPalette)

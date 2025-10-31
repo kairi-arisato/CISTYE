@@ -245,6 +245,9 @@ POP
   #include "MorePatches/DisplayDroppableItem/Display Droppable Item.event"
   #include "MorePatches/AutoRefreshingWeapons/AutoRefreshingWeapons.event"
   
-  #include "MorePatches/GroupAI/Installer.event"
+  #include "MorePatches/GroupAI/GroupAI.event"
 
   #include "MorePatches/Debugger/Installer.event"
+  
+  #include "MorePatches/NewCHAI/FE8-New_CHAI_EA.event"
+	
